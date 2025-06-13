@@ -21,15 +21,15 @@
             padding: 15px;
             border-radius: 5px;
             text-align: center;
-            pborder-bottom: none;
+            margin-bottom: 30px;
         }
         h2 {
             color: white;
             background-color: #395589;
-            margin-top: 30px;
+            margin: 30px 0 0 0;
             padding: 10px 15px;
-            border-radius: 5px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+            border-radius: 5px 5px 0 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         a {
             color: #395589;
@@ -38,12 +38,7 @@
         a:hover {
             text-decoration: underline;
         }
-        .contact {
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #eee;
-        }
-                .text-section {
+        .text-box {
             background-color: white;
             border: 1px solid black;
             border-radius: 0 0 5px 5px;
@@ -51,32 +46,48 @@
             margin-bottom: 30px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-        .section-container {
-            margin-top: 30px;
+        .contact {
+            margin-top: 40px;
+        }
+        .contact-box {
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 15px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         ul {
             padding-left: 20px;
+            margin: 0;
         }
     </style>
 </head>
 <body>
     <h1>ENA, ENCODAT y ENSAMA: En víspera de una nueva Encuesta Nacional de Adicciones</h1>
     
-    <p>Gracias por visualizar este repositorio de recursos adicionales. Aquí se encuentra la versión digital del poster presentado en <strong>XV Reunión de Investigación Demográfica</strong> con sede en la ciudad de Aguascalientes.</p>
+    <div class="text-box">
+        <p>Gracias por visualizar este repositorio de recursos adicionales. Aquí se encuentra la versión digital del poster presentado en <strong>XV Reunión de Investigación Demográfica</strong> con sede en la ciudad de Aguascalientes.</p>
+    </div>
     
     <h2>Poster</h2>
-    <p>Puedes acceder al <a href="https://issuu.com/celestealejandradiaz/docs/ena_encodat_y_ensama_en_v_spera_de_una_nueva_enc?ff" target="_blank">poster</a> por medio del enlace.</p>
+    <div class="text-box">
+        <p>Puedes acceder al <a href="https://issuu.com/celestealejandradiaz/docs/ena_encodat_y_ensama_en_v_spera_de_una_nueva_enc?ff" target="_blank">poster</a> por medio del enlace.</p>
+    </div>
     
     <h2>Material complementario</h2>
-    <ul>
-        <li><a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8iAHDvD97laOcteafbqVGgGzkmT2xL42saw&s" target="_blank">Cuadros de Comparación de items de encuesta 2002-2016</a></li>
-        <li><a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8iAHDvD97laOcteafbqVGgGzkmT2xL42saw&s" target="_blank">Cuadros de urgencias médicas y Defunciones 2016-2023</a></li>
-    </ul>
+    <div class="text-box">
+        <ul>
+            <li><a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8iAHDvD97laOcteafbqVGgGzkmT2xL42saw&s" target="_blank">Cuadros de Comparación de items de encuesta 2002-2016</a></li>
+            <li><a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8iAHDvD97laOcteafbqVGgGzkmT2xL42saw&s" target="_blank">Cuadros de urgencias médicas y Defunciones 2016-2023</a></li>
+        </ul>
+    </div>
     
     <div class="contact">
-        <h2>Contacto</h2>
-        <p>Correo Electrónico: <a href="mailto:cdiaz@colmex.mx">cdiaz@colmex.mx</a></p>
-        <p>Repositorio en GitHub: <a href="https://github.com/celestealejandra/Resources_Somede.github.io" target="_blank">Acceder al repositorio</a></p>
+        <div class="contact-box">
+            <h2>Contacto</h2>
+            <p>Correo Electrónico: <a href="mailto:cdiaz@colmex.mx">cdiaz@colmex.mx</a></p>
+            <p>Repositorio en GitHub: <a href="https://github.com/celestealejandra/Resources_Somede.github.io" target="_blank">Acceder al repositorio</a></p>
+        </div>
     </div>
 </body>
 </html>
