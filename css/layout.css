@@ -1,11 +1,370 @@
-Navbar
+/*⊹₊˚‧︵‿₊୨ᰔ୧₊‿︵‧˚₊⊹*
+So it goes.
+⊹₊˚‧︵‿₊୨ᰔ୧₊‿︵‧˚₊⊹*/
 
-Hero
 
-Main
+/*==========================================================
+                        NAVBAR
+==========================================================*/
 
-Sections
+.navbar {
+    width: min(92%, var(--container-width));
 
-Grid
+    position: fixed;
+    top: 1.25rem;
+    left: 50%;
+    z-index: 1000;
 
-Footer
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+
+    padding: 0.85rem 1.25rem;
+
+    transform: translateX(-50%);
+}
+
+
+/* Logo */
+
+.logo {
+    flex-shrink: 0;
+
+    font-family: var(--title-font);
+    font-size: 1.15rem;
+    line-height: 1.2;
+
+    color: var(--primary);
+}
+
+
+/* Navigation links container */
+
+.navbar nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1.5rem;
+}
+
+
+/*==========================================================
+                        MAIN
+==========================================================*/
+
+main {
+    width: 100%;
+}
+
+
+/*==========================================================
+                        HERO
+==========================================================*/
+
+.hero {
+    min-height: 100svh;
+
+    position: relative;
+    isolation: isolate;
+
+    display: grid;
+    place-items: center;
+
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+
+    overflow: hidden;
+}
+
+
+/* Main hero content */
+
+.hero-content {
+    width: min(92%, 920px);
+
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+}
+
+
+/* Hero title */
+
+.hero h1 {
+    max-width: 100%;
+
+    font-size: var(--fs-display);
+    line-height: 1.05;
+
+    color: var(--primary);
+}
+
+
+/* Professional description */
+
+.hero-subtitle {
+    max-width: 780px;
+
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+
+    font-size: var(--fs-body);
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+
+    color: var(--text);
+}
+
+
+/* Hero phrase */
+
+.hero-tagline {
+    max-width: 650px;
+
+    margin-top: 1rem;
+    margin-bottom: 0;
+
+    font-size: 1.15rem;
+    font-weight: 300;
+    line-height: 1.6;
+
+    color: var(--text-light);
+}
+
+
+/* Hero actions */
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    margin-top: 2.5rem;
+}
+
+
+/*==========================================================
+                    GENERAL SECTIONS
+==========================================================*/
+
+main > section:not(.hero) {
+    width: min(92%, var(--container-width));
+
+    margin-inline: auto;
+
+    position: relative;
+}
+
+
+/* Offset for fixed navigation */
+
+section[id] {
+    scroll-margin-top: 7rem;
+}
+
+
+/* Section heading */
+
+.section-header {
+    max-width: 760px;
+
+    margin-bottom: 3rem;
+}
+
+
+/* Optional section label */
+
+.section-label {
+    display: block;
+
+    margin-bottom: 0.75rem;
+
+    font-size: var(--fs-small);
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+
+    color: var(--primary);
+}
+
+
+/* Main section titles */
+
+main > section:not(.hero) h2 {
+    font-size: var(--fs-h2);
+    line-height: 1.15;
+
+    color: var(--primary);
+}
+
+
+/* Introductory section text */
+
+.section-intro {
+    max-width: 700px;
+
+    margin-top: 1rem;
+    margin-bottom: 0;
+
+    font-size: var(--fs-body);
+    line-height: 1.8;
+
+    color: var(--text-light);
+}
+
+
+/*==========================================================
+                        ABOUT
+==========================================================*/
+
+#about {
+    display: grid;
+    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+    align-items: start;
+    gap: clamp(3rem, 8vw, 7rem);
+}
+
+
+/*==========================================================
+                        PROJECTS
+==========================================================*/
+
+#projects {
+    display: block;
+}
+
+
+/* Container for project cards */
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+
+/*==========================================================
+                        RESEARCH
+==========================================================*/
+
+#research {
+    display: block;
+}
+
+
+/* Container for publications or research items */
+
+.research-list {
+    display: grid;
+    gap: 1.25rem;
+}
+
+
+/*==========================================================
+                        SKILLS
+==========================================================*/
+
+#skills {
+    display: grid;
+    grid-template-columns: minmax(0, 0.7fr) minmax(0, 1.3fr);
+    align-items: start;
+    gap: clamp(3rem, 8vw, 7rem);
+}
+
+
+/* Container for skill tags */
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 0.85rem;
+}
+
+
+/*==========================================================
+                        CONTACT
+==========================================================*/
+
+#contact {
+    min-height: 70vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+
+/* Limit contact text width */
+
+#contact .section-header {
+    max-width: 680px;
+
+    margin-inline: auto;
+}
+
+
+/* Contact links container */
+
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    margin-top: 2rem;
+}
+
+
+/*==========================================================
+                        FOOTER
+==========================================================*/
+
+footer {
+    width: min(92%, var(--container-width));
+
+    margin-inline: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+
+/* Footer text */
+
+footer p {
+    margin: 0;
+
+    font-size: var(--fs-small);
+
+    color: var(--text-light);
+}
+
+
+/* Optional footer navigation */
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.25rem;
+}
