@@ -227,11 +227,16 @@ main > section:not(.hero) h2 {
                         ABOUT
 ==========================================================*/
 
-#about {
-    display: grid;
-    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
-    align-items: start;
-    gap: clamp(3rem, 8vw, 7rem);
+#about{
+
+display:grid;
+
+grid-template-columns:340px 1fr;
+
+align-items:center;
+
+gap:5rem;
+
 }
 
 
