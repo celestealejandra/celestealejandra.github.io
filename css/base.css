@@ -1,11 +1,45 @@
-Variables
+:root{
 
-Colores
+    /*======================================
+                COLORS
+    ======================================*/
 
-Tipografías
+    --background:#F8F8FF;
 
-Espaciado
+    --surface:#FFFFFF;
 
-Reset
+    --primary:#2C2C76;
 
-Body
+    --secondary:#B0C4DE;
+
+    --text:#111827;
+
+    --text-light:#6B7280;
+
+    --border:#D9E2EF;
+
+    /*======================================
+                TYPOGRAPHY
+    ======================================*/
+
+    --title:"Yeseva One",serif;
+
+    --body:"Josefin Sans",sans-serif;
+
+    /*======================================
+                SPACING
+    ======================================*/
+
+    --section-width:1200px;
+
+    --section-padding:8rem;
+
+    /*======================================
+                EFFECTS
+    ======================================*/
+
+    --radius:18px;
+
+    --transition:.3s ease;
+
+}
