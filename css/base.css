@@ -133,6 +133,12 @@ section{
     padding:var(--section-padding) 0;
 
 }
+.section-divider {
+    margin: 1.25rem 0;
+
+    color: var(--secondary);
+    letter-spacing: 0.2em;
+}
 h1,h2,h3,h4{
 
     font-family:var(--title-font);
@@ -149,4 +155,9 @@ p{
 
 color:var(--text-light);
 
+}
+
+i,
+em {
+    font-weight: 300;
 }
