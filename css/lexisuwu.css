@@ -8,117 +8,93 @@ raise my hand
                     LEXIS BACKGROUND
 ==========================================================*/
 
-.hero::before{
+.hero {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+}
 
-    content:"";
 
-    position:absolute;
-    inset:0;
-    z-index:-2;
+/* Lexis grid */
+
+.hero::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+    z-index: 0;
 
     background-image:
 
         linear-gradient(
             to right,
-            rgba(176,196,222,.16) 1px,
+            rgba(44, 44, 118, 0.13) 1px,
             transparent 1px
         ),
 
         linear-gradient(
             to bottom,
-            rgba(176,196,222,.16) 1px,
+            rgba(44, 44, 118, 0.13) 1px,
             transparent 1px
         ),
 
         linear-gradient(
             45deg,
-            transparent 49.5%,
-            rgba(44,44,118,.08) 50%,
-            transparent 50.5%
+            transparent 49.4%,
+            rgba(44, 44, 118, 0.11) 49.5%,
+            rgba(44, 44, 118, 0.11) 50.5%,
+            transparent 50.6%
         );
 
     background-size:
         72px 72px,
         72px 72px,
-        144px 144px;
+        72px 72px;
 
-    background-position:
-        center,
-        center,
-        center;
-
+    pointer-events: none;
 }
 
 
-/* Soft fade over the diagram */
+/* Fade behind the text */
 
-.hero::after{
+.hero::after {
+    content: "";
 
-    content:"";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
 
-    position:absolute;
-    inset:0;
-    z-index:-1;
+    background: radial-gradient(
+        circle at center,
+        rgba(248, 248, 255, 0.45) 0%,
+        rgba(248, 248, 255, 0.68) 45%,
+        rgba(248, 248, 255, 0.9) 100%
+    );
 
-    background:
-        radial-gradient(
-            circle at center,
-            rgba(248,248,255,.58) 0%,
-            rgba(248,248,255,.82) 48%,
-            rgba(248,248,255,.98) 100%
-        );
-
-    pointer-events:none;
-
+    pointer-events: none;
 }
 
 
-/*==========================================================
-                    OPTIONAL AXIS LABELS
-==========================================================*/
+/* Content above the grid */
 
-.lexis-label{
-
-    position:absolute;
-    z-index:1;
-
-    font-size:.75rem;
-    font-weight:500;
-    letter-spacing:.14em;
-    text-transform:uppercase;
-
-    color:rgba(44,44,118,.42);
-
-    pointer-events:none;
-
+.hero-content {
+    position: relative;
+    z-index: 2;
 }
 
 
-.lexis-label-age{
+/* Labels above the background */
 
-    left:2rem;
-    top:50%;
+.lexis-label {
+    position: absolute;
+    z-index: 2;
 
-    transform:translateY(-50%) rotate(-90deg);
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
 
-}
+    color: rgba(44, 44, 118, 0.5);
 
-
-.lexis-label-period{
-
-    left:50%;
-    bottom:1.5rem;
-
-    transform:translateX(-50%);
-
-}
-
-
-.lexis-label-cohort{
-
-    right:2rem;
-    top:2rem;
-
-    transform:rotate(-45deg);
-
+    pointer-events: none;
 }
