@@ -1,13 +1,186 @@
-Botones
+/*⊹₊˚‧︵‿₊୨ᰔ୧₊‿︵‧˚₊⊹*
+    "A purpose of human life,
+    no matter who is controlling it,
+    is to love whoever is around
+    to be loved."
+⊹₊˚‧︵‿₊୨ᰔ୧₊‿︵‧˚₊⊹*/
 
-Cards
 
-Badges
+/*==========================================================
+                        BUTTONS
+==========================================================*/
 
-Skills
+.button{
 
-Timeline
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
 
-Tags
+    padding:.9rem 1.8rem;
 
-Links
+    border:none;
+    border-radius:999px;
+
+    background:var(--primary);
+    color:var(--surface);
+
+    font-size:var(--fs-small);
+    font-weight:600;
+
+    transition:var(--transition);
+
+    cursor:pointer;
+
+}
+
+.button:hover{
+
+    background:var(--text);
+
+}
+
+
+/* Secondary button */
+
+.button-secondary{
+
+    background:transparent;
+
+    border:1px solid var(--border);
+
+    color:var(--primary);
+
+}
+
+.button-secondary:hover{
+
+    background:var(--primary);
+
+    color:var(--surface);
+
+}
+
+
+/*==========================================================
+                    NAVIGATION LINKS
+==========================================================*/
+
+.navbar nav a{
+
+    position:relative;
+
+    font-weight:500;
+
+    transition:var(--transition);
+
+}
+
+
+.navbar nav a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    bottom:-6px;
+
+    width:100%;
+    height:2px;
+
+    background:var(--primary);
+
+    transform:scaleX(0);
+
+    transform-origin:left;
+
+    transition:var(--transition);
+
+}
+
+
+.navbar nav a:hover::after{
+
+    transform:scaleX(1);
+
+}
+
+
+/*==========================================================
+                        CARDS
+==========================================================*/
+
+.card{
+
+    background:var(--surface);
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius);
+
+    padding:2rem;
+
+    box-shadow:var(--shadow);
+
+}
+
+
+/*==========================================================
+                        TAGS
+==========================================================*/
+
+.tag{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    padding:.5rem .9rem;
+
+    border-radius:999px;
+
+    background:var(--surface);
+
+    border:1px solid var(--border);
+
+    font-size:var(--fs-small);
+
+    color:var(--primary);
+
+}
+
+
+/*==========================================================
+                    SECTION DIVIDER
+==========================================================*/
+
+.section-divider{
+
+    margin:1.5rem 0;
+
+    color:var(--secondary);
+
+    letter-spacing:.25em;
+
+    text-align:center;
+
+}
+
+
+/*==========================================================
+                    FOOTER LINKS
+==========================================================*/
+
+.footer-links a{
+
+    color:var(--text-light);
+
+    transition:var(--transition);
+
+}
+
+.footer-links a:hover{
+
+    color:var(--primary);
+
+}
