@@ -230,7 +230,9 @@ main > section:not(.hero) h2 {
 #about{
 
     display:flex;
+
     flex-direction:column;
+
     gap:1.5rem;
 
 }
@@ -239,11 +241,11 @@ main > section:not(.hero) h2 {
 
     display:grid;
 
-    grid-template-columns:minmax(240px,320px) 1fr;
+    grid-template-columns:300px 1fr;
 
-    align-items:center;
+    gap:4rem;
 
-    gap:2rem;
+    align-items:start;
 
 }
 
@@ -257,11 +259,9 @@ main > section:not(.hero) h2 {
 
 .about-photo img{
 
-    width:100%;
+    width:180px;
 
-    max-width:200px;
-
-    aspect-ratio:1 / 1;
+    height:180px;
 
     object-fit:cover;
 
