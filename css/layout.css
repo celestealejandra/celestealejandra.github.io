@@ -241,11 +241,14 @@ main > section:not(.hero) h2 {
 
     display:flex;
 
-    max-width: 700px;
+    width:min(100%, 760px);
     
+     display:flex;
+
     flex-direction:column;
 
-    gap:1rem;
+    gap:1.5rem;
+    align-items:center;
 
 }
 
