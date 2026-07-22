@@ -413,3 +413,26 @@ footer p {
     align-items: center;
     gap: 1.25rem;
 }
+/* =========================
+   PROJECTS LAYOUT
+========================= */
+
+#projects {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+#projects .section-header {
+    margin-bottom: 3.5rem;
+}
+
+#projects .section-intro {
+    max-width: 720px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+    align-items: stretch;
+}

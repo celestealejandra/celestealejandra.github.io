@@ -205,3 +205,143 @@
     color:var(--primary);
 
 }
+/* =========================
+   PROJECT CARDS
+========================= */
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    padding: 2rem;
+    border: 1px solid rgba(44, 44, 118, 0.28);
+    background: rgba(248, 248, 255, 0.55);
+    position: relative;
+    overflow: hidden;
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.project-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #2c2c76;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(44, 44, 118, 0.65);
+    box-shadow: 0 16px 30px rgba(30, 39, 81, 0.1);
+}
+
+.project-card:hover::before {
+    transform: scaleX(1);
+}
+
+.project-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.75rem;
+}
+
+.project-number {
+    font-family: "Yeseva One", serif;
+    font-size: 1.15rem;
+    line-height: 1;
+    color: #2c2c76;
+}
+
+.project-category {
+    max-width: 65%;
+    font-size: 0.72rem;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: 0.12em;
+    text-align: right;
+    text-transform: uppercase;
+    color: #1e2751;
+}
+
+.project-card h3 {
+    margin: 0 0 0.65rem;
+    font-family: "Yeseva One", serif;
+    font-size: clamp(1.35rem, 2vw, 1.75rem);
+    line-height: 1.2;
+    color: #1e2751;
+}
+
+.project-repository {
+    margin: 0 0 1.4rem;
+    font-size: 0.78rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(30, 39, 81, 0.62);
+}
+
+.project-description {
+    margin: 0 0 1.75rem;
+    line-height: 1.65;
+    color: #2c2c2c;
+}
+
+.project-tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.55rem;
+    margin: 0 0 2rem;
+    padding: 0;
+    list-style: none;
+}
+
+.project-tools li {
+    padding: 0.42rem 0.7rem;
+    border: 1px solid rgba(44, 44, 118, 0.24);
+    border-radius: 999px;
+    font-size: 0.75rem;
+    line-height: 1;
+    color: #2c2c76;
+    background: rgba(176, 196, 222, 0.18);
+}
+
+.project-links {
+    margin-top: auto;
+    padding-top: 1.25rem;
+    border-top: 1px solid rgba(44, 44, 118, 0.18);
+}
+
+.project-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #2c2c76;
+    text-decoration: none;
+    transition:
+        transform 0.2s ease,
+        opacity 0.2s ease;
+}
+
+.project-links a:hover {
+    transform: translateX(4px);
+    opacity: 0.72;
+}
+
+.project-links a:focus-visible {
+    outline: 2px solid #2c2c76;
+    outline-offset: 4px;
+}
