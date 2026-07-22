@@ -379,3 +379,52 @@
 .contact-card a {
     margin-top: auto;
 }
+.skill-tag-primary{
+    display:inline-flex;
+    align-items:center;
+
+    padding:.45rem .9rem;
+
+    border-radius:999px;
+
+    background: var(--card-background);
+
+    border:1px solid var(--accent);
+    
+    font-weight:600;
+
+  
+}
+.skill-tag-secondary{
+    display:inline-flex;
+    align-items:center;
+
+    padding:.45rem .9rem;
+
+    border:1px solid var(--border-color);
+
+    border-radius:999px;
+
+    background:transparent;
+
+    color:var(--text);
+
+    font-size:.9rem;
+}
+.skill-tag-learning{
+
+    display:inline-flex;
+    align-items:center;
+
+    padding:.45rem .9rem;
+
+    border-radius:999px;
+
+    border:1px dashed var(--border-color);
+
+    color:var(--text-light);
+
+    background:rgba(255,255,255,.03);
+
+    font-style:italic;
+}
