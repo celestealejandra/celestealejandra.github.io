@@ -322,16 +322,16 @@ main > section:not(.hero) h2 {
 ==========================================================*/
 
 #contact {
-    min-height: 70vh;
-
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    text-align: center;
+    gap: clamp(2.5rem, 6vw, 5rem);
 }
 
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+}
 
 /* Limit contact text width */
 

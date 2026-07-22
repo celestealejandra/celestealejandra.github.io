@@ -345,3 +345,37 @@
     outline: 2px solid #2c2c76;
     outline-offset: 4px;
 }
+
+
+/* =========================
+   CONTACTO
+========================= */
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+
+    padding: 2rem;
+
+    border: 1px solid var(--border-color);
+    border-radius: 1.25rem;
+}
+
+.contact-label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+}
+
+.contact-card h3 {
+    margin: 0;
+}
+
+.contact-card p {
+    margin: 0;
+}
+
+.contact-card a {
+    margin-top: auto;
+}
