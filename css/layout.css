@@ -169,7 +169,7 @@ main > section:not(.hero) {
 /* Offset for fixed navigation */
 
 section[id] {
-    scroll-margin-top: 7rem;
+    scroll-margin-top: 8rem;
 }
 
 
@@ -178,7 +178,7 @@ section[id] {
 .section-header {
     max-width: 760px;
 
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
 }
 
 
@@ -233,7 +233,7 @@ main > section:not(.hero) h2 {
 
     flex-direction:column;
 
-    gap:1.5rem;
+    gap:1rem;
 
 }
 
@@ -243,7 +243,7 @@ main > section:not(.hero) h2 {
 
     grid-template-columns:300px 1fr;
 
-    gap:2rem;
+    gap:1rem;
 
     align-items:start;
 
@@ -286,17 +286,24 @@ main > section:not(.hero) h2 {
 
 #projects {
     display: block;
+    padding-top: 2.5rem;
+    padding-bottom: 7rem;
 }
 
+#projects .section-header {
+    margin-bottom: 2.5rem;
+}
 
-/* Container for project cards */
+#projects .section-intro {
+    max-width: 720px;
+}
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+    align-items: stretch;
 }
-
 
 /*==========================================================
                         RESEARCH
@@ -412,27 +419,4 @@ footer p {
     flex-wrap: wrap;
     align-items: center;
     gap: 1.25rem;
-}
-/* =========================
-   PROJECTS LAYOUT
-========================= */
-
-#projects {
-    padding-top: 7rem;
-    padding-bottom: 7rem;
-}
-
-#projects .section-header {
-    margin-bottom: 3.5rem;
-}
-
-#projects .section-intro {
-    max-width: 720px;
-}
-
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 1.5rem;
-    align-items: stretch;
 }
